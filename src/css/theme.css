@@ -115,17 +115,102 @@
 #pink {
   background-color: #FF80AB;
 }
+/* -------------------------- */
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+body #border {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  z-index: 4;
+  box-shadow: 0px 0px 5px rgb(79, 195, 247) inset,
+    10px 10px 5px rgba(79, 195, 247, 0.5) inset,
+    10px 10px 5px rgba(79, 195, 247, 0.25) inset,
+    10px 10px 5px rgba(79, 195, 247, 0.1) inset;
+}
+
+header {
+  position: absolute;
+  z-index: 4;
+  margin: 0;
+  width: 100%;
+  background-color: #81C784;
+}
+
+header nav a {
+  margin: 0;
+  text-decoration: none;
+  color: #B2EBF2;
+  text-shadow: 0 0 20px #FFFFFF,
+    0 0 30px #FFFFFF96,
+    0 0 40px #FFFFFF3F;
+}
+
+@media only screen and (min-width: 481px) {
+  header {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2em;
+  }
+
+  header nav a {
+    padding: 2em;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  header {
+    width: calc(100% - 2em);
+    padding: 1em;
+  }
+
+  header nav a {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    padding: 0.5em;
+  }
+}
+
+main {
+  position: absolute;
+  z-index: 2;
+  margin: 0;
+  padding: 0.5em 2em;
+  background-color: #F06292;
+}
+
+main #greetings p {
+  text-indent: 2em;
+}
+
+main #greetings p a {
+  text-decoration: none;
+}
+
+footer {
+  position: absolute;
+  z-index: 2;
+}
 
 h1 {
   text-align: center;
   font-size: 3rem;
   margin-top: 50px;
-  color: #FFFFFF;
-  text-shadow: 0 0 20px #FFFFFF,
-    0 0 30px #FFFFFF,
-    0 0 40px #FFFFFF;
+  color: #FFFF8D;
+  text-shadow: 0 0 20px #FFFF8D,
+    0 0 30px #FFFF8D96,
+    0 0 40px #FFFF8D3F;
 }
 
-body {
-  background-color: #4A4A4A;
+a {
+  text-decoration: none;
+  color: #B2EBF2;
+  text-shadow: 0 0 20px #B2EBF2,
+    0 0 30px #B2EBF296,
+    0 0 40px #B2EBF23F;
 }
