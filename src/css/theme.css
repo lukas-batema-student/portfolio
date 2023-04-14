@@ -122,22 +122,9 @@ body {
   width: 100%;
 }
 
-body #border {
-  position: relative;
-  height: 100%;
-  width: 100%;
-  z-index: 4;
-  box-shadow: 0px 0px 5px rgb(79, 195, 247) inset,
-    10px 10px 5px rgba(79, 195, 247, 0.5) inset,
-    10px 10px 5px rgba(79, 195, 247, 0.25) inset,
-    10px 10px 5px rgba(79, 195, 247, 0.1) inset;
-}
-
 header {
-  position: absolute;
-  z-index: 4;
   margin: 0;
-  width: 100%;
+  width: calc(100% - 4em);
   background-color: #81C784;
 }
 
@@ -177,8 +164,6 @@ header nav a {
 }
 
 main {
-  position: absolute;
-  z-index: 2;
   margin: 0;
   padding: 0.5em 2em;
   background-color: #F06292;
@@ -193,8 +178,10 @@ main #greetings p a {
 }
 
 footer {
-  position: absolute;
-  z-index: 2;
+  text-align: center;
+  margin: 0;
+  padding: 2em;
+  background-color: #64B5F6;
 }
 
 h1 {
